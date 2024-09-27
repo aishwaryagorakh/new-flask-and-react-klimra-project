@@ -19,7 +19,6 @@ This project demonstrates how to build a simple CRUD web app using:
 
 - **Flask** as the backend for handling API requests and database operations.
 - **React** as the frontend for creating a dynamic and interactive user interface.
-- **SQLite** (or any database of your choice) to store the records.
 
 Users can add new records and fetch the most recent record using the app's interface.
 

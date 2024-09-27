@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #f0f4f8; /* Light blue background */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main container styling */
+div {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  border-left: 5px solid #ffb74d; /* Left border for visual pop */
+}
+
+h1 {
+  font-size: 26px;
+  color: #424242;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #424242;
+  margin-bottom: 15px;
+}
+
+/* Input styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #4db6ac; /* Teal border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #e0f7fa; /* Light teal background */
+  color: #00796b; /* Darker teal text */
+}
+
+input[type="text"]::placeholder {
+  color: #00796b;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff7043; /* Orange background */
   color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #e64a19; /* Darker orange on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #d84315; /* Even darker orange on active */
+}
+
+/* Message and record display */
+p {
+  margin-top: 10px;
+  color: #388e3c; /* Green text for success message */
+  font-size: 16px;
+}
+
+div:last-of-type {
+  margin-top: 20px;
+}
+
+div:last-of-type h3 {
+  font-size: 18px;
+  color: #455a64; /* Dark gray */
+}
+
+div:last-of-type p {
+  font-size: 16px;
+  color: #424242;
+  background-color: #fce4ec; /* Light pink background for record */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ec407a; /* Pink border for record */
+}
+
+/* Add some media queries for responsiveness */
+@media (max-width: 500px) {
+  div {
+    padding: 20px;
+    max-width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
   }
 }
